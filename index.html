@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vexo Search</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="icon" type="image/x-icon" href="https://imgur.com/VUD3TW5.png">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <img src="https://i.imgur.com/aGeIcdC.png">
+            <div class="searchBx">
+                <input type="text" name="" class="query" value="">
+                <div class="icons">
+                    <div><img src="https://imgur.com/bFCzhbe.png"></div>
+                    <div><img src=" https://i.imgur.com/BKtThjs.png "></div>
+                </div>
+            </div>
+          
+            <div class="button">
+                <button class="searchBtn">Vexo Search</button>
+            </div>
+        </div>
+    </section>
+      <footer>
+  <p class="text-center">By - Fiyer</p>
+</footer>
+    <script>
+        let query = document.querySelector('.query');
+        let searchBtn = document.querySelector('.searchBtn');
+
+        searchBtn.onclick = function(){
+            let url = 'https://www.google.com/search?q='+query.value;
+            window.open(url,'_self');
+        }
+    </script>
+</body>
+</html>
